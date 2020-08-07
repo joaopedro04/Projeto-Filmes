@@ -1,0 +1,14 @@
+<div class="teste">
+    <mat-card class="example-card" *ngFor="let filme of filmes">
+        <img mat-card-image src="{{filme.poster}}">
+        <mat-card-header class="headerTitulos">
+            <mat-card-title class="titulos">{{ filme.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions align="center">
+            <button mat-raised-button color="primary" (click)="openModal(filme)">Detalhes</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+<div class="teste" >
+    <mat-paginator [length]="maxPag" [pageSize]="20" (page)="onPaginateChange($event)"></mat-paginator>
+</div>

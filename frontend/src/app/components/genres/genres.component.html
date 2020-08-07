@@ -1,0 +1,9 @@
+<!-- [(selectedIndex)]="selectedIndex" -->
+<mat-tab-group (selectedTabChange)="changeRoute($event)">
+    <mat-tab label="Popular">
+        <!-- <list></list> -->
+    </mat-tab>
+    <mat-tab *ngFor="let g of generos" label="{{ g.name }}">
+
+    </mat-tab>
+</mat-tab-group>
