@@ -1,8 +1,13 @@
 # To run the project
-to execute the project
-open the project paste in the terminal and in the terminal, put:
-```cd backend && npm start``` 
+open the project paste in the terminal and put:
+```cd backend && npm install```
+to start backend server, run this command:
+```npm start```;
+
 in another terminal, put:
-```cd frontend && ng serves```
+```cd frontend && npm install```
+to start frontend server, run this command:
+```ng serve```
+
 to open project in google chrome, put:
 ```http://localhost:4200```
